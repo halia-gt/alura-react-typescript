@@ -4,9 +4,7 @@ import Botao from '../Botao';
 import style from './Formulario.module.scss';
 import { v4 as uuidv4 } from 'uuid';
 
-class Formulario extends React.Component<{
-    setTarefas: React.Dispatch<React.SetStateAction<ITarefa[]>>
-}> {
+class Formulario extends React.Component<{setTarefas: React.Dispatch<React.SetStateAction<ITarefa[]>>}> {
     state = {
         tarefa: "",
         tempo: "00:00"
